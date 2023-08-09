@@ -9,8 +9,42 @@ a {
   color: inherit;
 }
 
+h3 {
+  font-weight: bold;
+}
+
+.media-container {
+  overflow: hidden;
+}
+
+.media-container img,
+.media-container video {
+  display: block;
+  width: 100%;
+}
+
 strong {
   font-weight: bold;
+}
+
+/* Universal Component - Flex Content Container */
+
+.flex-content {
+  display: flex;
+  padding: 0 1.5rem;
+}
+
+.flex-content .main-content {
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 0;
+  border-right: 1px solid rgb(245, 245, 245);
+}
+
+.flex-content .supporting-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem 0;
 }
 
 /* Header */
@@ -45,4 +79,38 @@ header li:last-child {
 
 header .mobile {
   display: none;
+}
+
+.flex-banner {
+  display: flex;
+}
+/* banner*/
+#banner {
+  background-color: rgb(219, 219, 219);
+}
+
+#banner .main-content {
+  border-right: none;
+}
+
+#banner .supporting-content {
+  justify-content: center;
+}
+
+#banner h3 {
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+#banner p {
+  padding-bottom: 1.5rem;
+  align-items: center;
+}
+
+#banner a {
+  padding: 0.5rem 0;
+  background-color: rgb(155, 155, 155);
+  text-align: center;
+  color: white;
+  width: 40%;
 }
