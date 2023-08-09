@@ -1,0 +1,48 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* Header */
+
+header {
+  padding: 1rem 1.5rem;
+}
+
+header .desktop {
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  margin-right: 0.5rem;
+}
+
+header li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+header li:last-child {
+  padding-right: 0;
+}
+
+header .mobile {
+  display: none;
+}
